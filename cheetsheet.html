@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>My Cheatsheet</title>
+</head>
+
+<body>
+    <header>Jimmy Jeans</header>
+    <main>
+        <div class="welcome">
+            <h1>My Cheatsheet</h1>
+            <article>
+                This site is my personal work and cheatsheet for common stuff you need
+                from time to time. This will help me keep me updated and ongoing.
+                <br />
+                The navigation beneath will bring you to your section you clicked on.
+            </article>
+            <section class="navigation">
+                <nav class="navbar">
+                    <ul class="list">
+                        <li><a href="#css">CSS</a></li>
+                        <li><a href="#HTML">HTML</a></li>
+                        <li><a href="#java">JavaScript</a></li>
+                        <li><a href="#Useful">Useful links</a></li>
+                    </ul>
+
+                </nav>
+            </section>
+        </div>
+
+
+
+        <!-- HTML Section -->
+        <div class="htmlsection" id="HTML">
+            <section>
+                <h2>HTML Stuff</h2>
+                <article class="introduction">
+                    HTML is short for HyperText Markup Language.
+                    Its designed to be displayed in web browser applications and defines the content and the
+                    structure. So in this Cheetsheet I will provide some "blueprints" I need in the future to build
+                    basic web appearances to use by myself.
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="table1">Usecase</th>
+                                <th class="table1">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Buttons</td>
+                                <td>If you want to use Buttons you initialize them like this: <br>
+                                    &lt;buttons&gt; Name of the Button &lt;/buttons&gt; <br>
+                                    &lt;buttons&gt; Name of the Button &lt;/buttons&gt; <br>
+                                    &lt;buttons&gt; Name of the Button &lt;/buttons&gt; <br> </td>
+                            </tr>
+                            <tr>
+                                <td>Initializin CSS</td>
+                                <td>In "headspace", selfclosing, you go: <br><br>
+
+                                    &lt;link rel="stylesheet" href="./path/to/stylesheet.css" /&gt; </td>
+                            </tr>
+                            <tr>
+                                <td>Insertion of a picture</td>
+                                <td>&lt;img href=""&gt; &lt;/img&gt;</td>
+                            </tr>
+                            <tr>
+                                <td>Linking to other sources</td>
+                                <td>&lt;link&gt; <br> &lt;link&gt;
+                                    <br> &lt;link&gt;
+                                </td>
+                            </tr>
+
+
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+            </section>
+            <section class="basics">
+                <h4>Basic html blanko page</h4>
+                <article class="basic-articles">
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html lang=&quot;en&quot;&gt;<br><br>
+                    &lt;head&gt;<br>
+                    &lt;meta charset=&quot;UTF-8&quot;&gt;<br>
+                    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;<br>
+                    &lt;title&gt;Meine HTML-Seite&lt;/title&gt;<br>
+                    &lt;/head&gt;<br><br>
+                    &lt;body&gt;<br>
+                    &lt;h1&gt;Hallo Welt!&lt;/h1&gt;<br>
+                    &lt;p&gt;Dies ist eine einfache leere HTML-Seite.&lt;/p&gt;<br>
+                    
+                    &lt;/body&gt;<br><br>
+                    &lt;/html&gt;<br>
+
+                </article>
+            </section>
+        </div>
+        <!-- CSS Section -->
+        <div class="cssection" id="css">
+            <section>
+                <h2>CSS properties</h2>
+                <article class="introduction"></article>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="table1">Property</th>
+                            <th class="table1">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@media query</td>
+                            <td>
+                                A media query in CSS is used to apply different styles to a
+                                web page based on certain conditions, such as the device's
+                                screen size, orientation, resolution, or other media features.
+                                Media queries allow you to create responsive designs that
+                                adapt to different devices and screen sizes, providing a
+                                better user experience across various devices like desktops,
+                                tablets, and mobile phones.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Colors</td>
+                            <td>There are several ways: Hex-code, rgb, rgba etc. <br>
+                                you can either use words, or, the page linked at the bottom, click the link
+                                i provide at the bottom. Its easier if you can see multiple colors to choose. </td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!-- Java Section -->
+        <div class="javasection" id="java">
+            <section>
+                <h2>Java Section</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="table1">Property</th>
+                            <th class="table1">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Java commands</td>
+                            <td>
+                                e.g.: initializations like let <br />
+                                camelText rule
+                            </td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <!-- Button area -->
+    <div class="useful-links" id="Useful">
+        <h3>Useful <a href="Useful">links</a></h3>
+        <p>
+            These buttons will direct to sites that will help you with your
+            problems, give each one a try if you don't know "what's wrong with this
+            code!"
+        </p>
+        <section class="link-buttons">
+            <button class="buttons">
+                <a href="https://chat.openai.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/ChatGPT-Logo.png/1600px-ChatGPT-Logo.png"
+                        alt="ChatGPTlogo" title="click here to get help at ChatGPT" />
+                </a>
+            </button>
+            <button class="buttons">
+                <a href="https://developer.mozilla.org/en-US/" target="_blank">
+                    <img src="https://pbs.twimg.com/profile_images/1511434207079407618/AwzUxnVf_400x400.png"
+                        alt="Mozilla Developer Network link"
+                        title="click here if you want to visit Mozilla Developer Network link" />
+                </a>
+            </button>
+
+            <button class="buttons">
+                <a href="https://www.google.com/" target="_blank">
+                    <img src="https://www.svgrepo.com/show/303108/google-icon-logo.svg" alt="Google link"
+                        title="GO GOOGLE IT!" />
+                </a>
+            </button>
+
+            <button class="buttons">
+                <a href="https://stackoverflow.com/" target="_blank">
+                    <img src="https://www.vectorlogo.zone/logos/stackoverflow/stackoverflow-official.svg"
+                        alt="Stack Overflow" title="Stack Overflow it is" />
+                </a>
+            </button>
+
+            <button class="buttons">
+                <a href="https://htmlcolorcodes.com/" target="_blank">
+                    <img src="https://miro.medium.com/v2/resize:fit:3840/format:webp/1*3l_gNnYqeGpwNUoQEYGM9w.jpeg"
+                        alt="Colors" title="look here for Colors" />
+                </a>
+            </button>
+
+            <button class="buttons">
+                <a href="https://loremipsum.io" target="_blank">
+                    <img src="https://public-images.interaction-design.org/tags/Screenshot%20of%20Typefaces.png"
+                        alt="Fonts" title="look here for fonts" />
+                </a>
+            </button>
+            <!-- Add more buttons as needed -->
+        </section>
+    </div>
+    <article>
+        <p>Personal note:<br> this is just a blankspace I will rework from time to time as I continue to 
+            learn more and more. For me, this stems from the will to always learn new, unknown stuff so in case 
+            i need it, i know and probably pass knowledge to others. 
+            So feel free to comment and critizise my work, or tell me what you thought was good. 
+            Best Regards, <br>
+            Jimmy Jeans.
+        </p>
+    </article>
+
+    <section class="footer">
+        <footer>
+            This site is dedicated to my further following
+            <a href="#">portfolio</a>.<br>
+            <aside>Check my work at <link href=""> Github
+              
+            </aside>
+        </footer>
+    </section>
+
+
+</body>
+
+</html>
