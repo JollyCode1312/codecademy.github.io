@@ -16,17 +16,22 @@ button {
     padding: 0;
 }
 
+h2 {
+    text-align: center;
+}
+
 h3 {
     text-align: center;
 }
 
 
 body {
+
+    margin: auto 20px;
     font-family: Arial, Helvetica;
     line-height: 1.6;
     background-color: #26415e;
-
-
+    border: 1px solid white;
 }
 
 
@@ -57,7 +62,6 @@ main {
     justify-content: space-around;
     margin-top: 1rem;
     border: 1px solid;
-    
 }
 
 .navbar li {
@@ -73,7 +77,6 @@ main {
     transition: color 0.3s ease-in-out;
     font-size: larger;
     color: white;
-
 }
 
 .navbar a:hover {
@@ -81,15 +84,21 @@ main {
     cursor: pointer;
 }
 
-.basics{
+.basics {
     border-color: 1px solid white;
-
 }
 
-.basic-articles{
+/* border entfernen später */
+.content {
+    border: 2px solid whitesmoke;
+    margin: 25px 0px;
+    background-color: #18293b;
+    padding: 10px 5px;
+}
+
+.basic-articles {
     background-color: black;
-    color:  rgb(27, 182, 19);
-    
+    color: rgb(27, 182, 19);
 }
 
 h1,
@@ -102,9 +111,7 @@ h3 {
 .useful-links p {
     color: white;
     text-align: center;
-
 }
-
 
 table {
     width: 100%;
@@ -112,10 +119,15 @@ table {
     margin-bottom: 1rem;
 }
 
+table,
 th,
 td {
-    border: 1px solid #ddd;
+    border: 3px solid gray;
     padding: 0.5rem;
+}
+
+.about{
+    font-weight: bold;
 }
 
 
@@ -125,7 +137,6 @@ td {
     padding: 1rem;
     margin-bottom: 2rem;
     border: 1px solid white;
-
 }
 
 .link-buttons {
@@ -136,6 +147,7 @@ td {
 .buttons {
     margin: 0 0.5rem;
     box-shadow: 1px 2px;
+    flex-wrap: nowrap;
 }
 
 .buttons a {
@@ -148,10 +160,16 @@ td {
     height: auto;
 }
 
-
 .footer {
     background-color: grey;
     color: white;
     text-align: center;
     padding: 1rem;
+}
+
+.personal {
+    margin: auto 10px;
+    margin-bottom: 10px;
+    padding: 0 5px;
+    border: 2px solid grey;
 }
