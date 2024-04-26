@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/cheatsheet.css">
 
     <title>My Cheatsheet</title>
 </head>
@@ -15,8 +15,8 @@
         <div class="welcome">
             <h1>My Cheatsheet</h1>
             <article>
-                This site is my personal work and cheatsheet for common stuff you need
-                from time to time. This will help me keep me updated and ongoing.
+                This site is my personal work and cheatsheet for common stuff plus its a playground for me to practise
+                my skills.
                 <br />
                 The navigation beneath will bring you to your section you clicked on.
             </article>
@@ -36,14 +36,16 @@
 
 
         <!-- HTML Section -->
-        <div class="htmlsection" id="HTML">
+        <div class="content" id="HTML">
             <section>
                 <h2>HTML Stuff</h2>
                 <article class="introduction">
-                    HTML is short for HyperText Markup Language.
+                    "HTML is short for HyperText Markup Language.
                     Its designed to be displayed in web browser applications and defines the content and the
-                    structure. So in this Cheetsheet I will provide some "blueprints" I need in the future to build
+                    structure." <br>
+                    So in this Cheetsheet I will provide some "blueprints" I need in the future to build
                     basic web appearances to use by myself.
+
                     <table>
                         <thead>
                             <tr>
@@ -53,24 +55,24 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Buttons</td>
+                                <td class="about">Buttons</td>
                                 <td>If you want to use Buttons you initialize them like this: <br>
                                     &lt;buttons&gt; Name of the Button &lt;/buttons&gt; <br>
                                     &lt;buttons&gt; Name of the Button &lt;/buttons&gt; <br>
                                     &lt;buttons&gt; Name of the Button &lt;/buttons&gt; <br> </td>
                             </tr>
                             <tr>
-                                <td>Initializin CSS</td>
+                                <td class="about">Initializing CSS</td>
                                 <td>In "headspace", selfclosing, you go: <br><br>
 
                                     &lt;link rel="stylesheet" href="./path/to/stylesheet.css" /&gt; </td>
                             </tr>
                             <tr>
-                                <td>Insertion of a picture</td>
+                                <td class="about">Insertion of a picture</td>
                                 <td>&lt;img href=""&gt; &lt;/img&gt;</td>
                             </tr>
                             <tr>
-                                <td>Linking to other sources</td>
+                                <td class="about">Linking to other sources</td>
                                 <td>&lt;link&gt; <br> &lt;link&gt;
                                     <br> &lt;link&gt;
                                 </td>
@@ -94,7 +96,7 @@
                     &lt;body&gt;<br>
                     &lt;h1&gt;Hallo Welt!&lt;/h1&gt;<br>
                     &lt;p&gt;Dies ist eine einfache leere HTML-Seite.&lt;/p&gt;<br>
-                    
+
                     &lt;/body&gt;<br><br>
                     &lt;/html&gt;<br>
 
@@ -102,7 +104,7 @@
             </section>
         </div>
         <!-- CSS Section -->
-        <div class="cssection" id="css">
+        <div class="content" id="css">
             <section>
                 <h2>CSS properties</h2>
                 <article class="introduction"></article>
@@ -115,7 +117,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>@media query</td>
+                            <td class="about">@media query</td>
                             <td>
                                 A media query in CSS is used to apply different styles to a
                                 web page based on certain conditions, such as the device's
@@ -127,10 +129,113 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Colors</td>
-                            <td>There are several ways: Hex-code, rgb, rgba etc. <br>
+                            <td class="about">Colors</td>
+                            <td>There are several ways:<br> Hex-code, rgb, rgba etc. <br>
                                 you can either use words, or, the page linked at the bottom, click the link
                                 i provide at the bottom. Its easier if you can see multiple colors to choose. </td>
+                            <td>Hex code: #FFFFFF <br>
+                                rgb: rbg(value, value, value) <br>
+                                rgba: rgba(value, value, value, a) <br>
+                                hsl: hsl(value, value, value) <br>
+                                hsla: hsla(value, value, value, a) <br> </td>
+                        </tr>
+                        <tr>
+                            <td class="about">Flexbox justification</td>
+                            <td>Below are five commonly used values for the justify-content property: <br><br>
+
+                                flex-start — all items will be positioned in order, starting from the left of the parent
+                                container, with no extra space between or before them. <br>
+                                <br>
+                                flex-end — all items will be positioned in order, with the last item starting on the
+                                right side of the parent container, with no extra space between or after them. <br><br>
+                                center — all items will be positioned in order, in the center of the parent container
+                                with no extra space before, between, or after them.<br><br>
+                                space-around — items will be positioned with equal space before and after each item,
+                                resulting in double the space between elements.<br><br>
+                                space-between — items will be positioned with equal space between them, but no extra
+                                space before the first or after the last elements.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="about">Flexbox Alignment</td>
+                            <td>Below are five commonly used values for the align-items property: <br> <br>
+
+                                <u>flex-start</u> — all elements will be positioned at the top of the parent container.
+                                <br>
+                                <u>flex-end</u> — all elements will be positioned at the bottom of the parent container.
+                                <br>
+                                center — the center of all elements will be positioned halfway between the top and
+                                bottom of the parent container. <br>
+                                <u>baseline</u> — the bottom of the content of all items will be aligned with each
+                                other. <br>
+                                stretch — if possible, the items will stretch from top to bottom of the container (this
+                                is the default value; elements with a specified height will not stretch; elements with a
+                                minimum height or no height specified will stretch).
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="about">Flexbox flex and flex-wrap</td>
+                            <td>The shorthand flex property provides a convenient way for specifying how elements
+                                stretch and shrink, while simplifying the CSS required. The flex property allows you to
+                                declare flex-grow, flex-shrink, and flex-basis all in one line.</td>
+                            <td>The <u>flex-wrap</u> property can accept three values:
+
+                                wrap — child elements of a flex container that don’t fit into a row will move down to
+                                the next line
+                                wrap-reverse — the same functionality as wrap, but the order of rows within a flex
+                                container is reversed (for example, in a 2-row flexbox, the first row from a wrap
+                                container will become the second in wrap-reverse and the second row from the wrap
+                                container will become the first in wrap-reverse)
+                                nowrap — prevents items from wrapping; this is the default value and is only necessary
+                                to override a wrap value set by a different CSS rule.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="about">align-content (basicly the same as the rest)</td>
+                            <td>Below are some of the more commonly used align-content values:
+
+                                flex-start — all rows of elements will be positioned at the top of the parent container
+                                with no extra space between.
+                                flex-end — all rows of elements will be positioned at the bottom of the parent container
+                                with no extra space between.
+                                center — all rows of elements will be positioned at the center of the parent element
+                                with no extra space between.
+                                space-between — all rows of elements will be spaced evenly from the top to the bottom of
+                                the container with no space above the first or below the last.
+                                space-around — all rows of elements will be spaced evenly from the top to the bottom of
+                                the container with the same amount of space at the top and bottom and between each
+                                element.
+                                stretch — if a minimum height or no height is specified, the rows of elements will
+                                stretch to fill the parent container from top to bottom (default value).
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="about">Flex-direction & Flex-Flow</td>
+                            <td>The main axis is used to position flex items with the following properties:
+
+                                justify-content
+                                flex-wrap
+                                flex-grow
+                                flex-shrink
+
+                                The cross axis is used to position flex items with the following properties:
+
+                                align-items
+                                align-content
+                                The flex-direction property can accept four values:
+
+                                row — elements will be positioned from left to right across the parent element starting
+                                from the top left corner (default).
+                                row-reverse — elements will be positioned from right to left across the parent element
+                                starting from the top right corner.
+                                column — elements will be positioned from top to bottom of the parent element starting
+                                from the top left corner.
+                                column-reverse — elements will be positioned from the bottom to the top of the parent
+                                element starting from the bottom left corner.
+                                flex-flow property is used to declare both the flex-wrap and flex-direction properties
+                                in one line.
+
+                            </td>
                         </tr>
                         <!-- Add more rows as needed -->
                     </tbody>
@@ -139,9 +244,9 @@
         </div>
 
         <!-- Java Section -->
-        <div class="javasection" id="java">
+        <div class="content" id="java">
             <section>
-                <h2>Java Section</h2>
+                <h2>JavaScript Section</h2>
                 <table>
                     <thead>
                         <tr>
@@ -151,7 +256,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Java commands</td>
+                            <td class="about">Java commands</td>
                             <td>
                                 e.g.: initializations like let <br />
                                 camelText rule
@@ -168,7 +273,7 @@
     <div class="useful-links" id="Useful">
         <h3>Useful <a href="Useful">links</a></h3>
         <p>
-            These buttons will direct to sites that will help you with your
+            These buttons will direc yout to helpful sites that will help you with your
             problems, give each one a try if you don't know "what's wrong with this
             code!"
         </p>
@@ -209,20 +314,29 @@
             </button>
 
             <button class="buttons">
+                <a href="https://color.adobe.com/" target="_blank">
+                    <img src="https://cdn-1.webcatalog.io/catalog/adobe-color/adobe-color-icon-filled-256.webp?v=1675614179393"
+                        alt="Adobe Color link" title="Adobe Color concepts >>click>>" />
+                </a>
+            </button>
+
+            <button class="buttons">
                 <a href="https://loremipsum.io" target="_blank">
                     <img src="https://public-images.interaction-design.org/tags/Screenshot%20of%20Typefaces.png"
                         alt="Fonts" title="look here for fonts" />
                 </a>
             </button>
+
+
             <!-- Add more buttons as needed -->
         </section>
     </div>
-    <article>
-        <p>Personal note:<br> this is just a blankspace I will rework from time to time as I continue to 
-            learn more and more. For me, this stems from the will to always learn new, unknown stuff so in case 
-            i need it, i know and probably pass knowledge to others. 
-            So feel free to comment and critizise my work, or tell me what you thought was good. 
-            Best Regards, <br>
+    <article class="personal">
+        <p>Personal note:<br> this is just a blankspace I will rework from time to time as I continue to
+            learn more and more. For me, this stems from the will to always learn new, unknown stuff so in case
+            i need it, i know and probably pass knowledge to others.
+            So feel free to comment and critizise my work, or tell me what you thought was good.
+            <br>Best Regards! <br>
             Jimmy Jeans.
         </p>
     </article>
@@ -231,7 +345,8 @@
         <footer>
             This site is dedicated to my further following
             <a href="#">portfolio</a>.<br>
-            <aside>Check my work at <a href="https://github.com/JollyCode1312"> Github</a>
+            <aside class="gitlink">Check my work at <a href="https://github.com/JollyCode1312" target="_blank"> Github</a> <br>
+            There you can also find my colors/fonts project if you need some inspiration.
             </aside>
         </footer>
     </section>
